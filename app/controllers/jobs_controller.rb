@@ -9,7 +9,15 @@ class JobsController < ApplicationController
     Job.create(job_params)
     redirect_to jobs_path
   end
+  def edit
+    @job = Job.find(params[:id])
+  end
 
+  def update
+    @job = Job.find(params[:id])
+    redirect_to jobs_path
+    @job.update_attributes(job_params)
+  end
   private
   def job_params
     params.require(:job).permit(:title, :description)
