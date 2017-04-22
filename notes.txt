@@ -1,0 +1,11 @@
+To change the API methods so that not a full REST API, can write
+resources :jobs => only [index, show]
+or use "except" or something
+g is short for generate in rails
+Job.find(id) for getting by id number
+Job.find_or_create_by(title: blah)
+Job.first and Job.last
+p for print
+
+Snowcones: <% are for putting Ruby code inside view template
+<%= are template variable language, i.e. "print this thing"
