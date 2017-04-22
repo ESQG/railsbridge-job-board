@@ -1,7 +1,15 @@
 
     <h1>RailsBridge Co-Op Open Jobs</h1>
 
+    <table>
+      <tr>
+        <th>Job title</th>
+        <th>Job description</th>
     <% @jobs.each do |job| %>
-      <h3><%= job.title %></h3>
-      <p><%= job.description %></p>
+  </tr>
+    <tr>
+      <td><%= job.title %></td>
+      <td><%= job.description %></td>
+    </tr>
+  </table>
     <% end %>
